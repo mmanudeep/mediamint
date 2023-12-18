@@ -27,49 +27,436 @@
         "button"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
+        "extra_class": "main_home-banner",
+        "image": "shopify:\/\/shop_images\/trendest-studio-XZ3EmAIWuz0-unsplash_1.jpg",
+        "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "inverse",
-        "image_behavior": "none",
+        "image_behavior": "zoom-in",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false
       }
     },
-    "featured_collection": {
+    "143d3e38-8835-4fa1-8e66-5ed6153c8e5b": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
+        "title": "Featured collection",
+        "heading_size": "h1",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
+        "collection": "adidas",
+        "products_to_show": 6,
+        "columns_desktop": 4,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": true,
+        "enable_quick_add": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "115f5bdc-c0ec-46ca-8ea2-ce7815e0e08b": {
+      "type": "video-background",
+      "blocks": {
+        "template--14922039296102__115f5bdc-c0ec-46ca-8ea2-ce7815e0e08b-video-1": {
+          "type": "video",
+          "settings": {
+            "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/29a5385eefea4e0982910d414f9cb279.mp4",
+            "overlay_opacity": 0,
+            "title": "",
+            "text": "",
+            "color_text": "#ffffff",
+            "button_label": "",
+            "button_link": "",
+            "color_btn_bg": "#ffffff",
+            "color_btn_text": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "template--14922039296102__115f5bdc-c0ec-46ca-8ea2-ce7815e0e08b-video-1"
+      ],
+      "settings": {
+      }
+    },
+    "2a2f085d-f114-4781-ab6f-d4b5b7ecc3a9": {
+      "type": "featured-product",
+      "blocks": {
+        "template--14922039296102__2a2f085d-f114-4781-ab6f-d4b5b7ecc3a9-text-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "template--14922039296102__2a2f085d-f114-4781-ab6f-d4b5b7ecc3a9-title-1": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "template--14922039296102__2a2f085d-f114-4781-ab6f-d4b5b7ecc3a9-price-1": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "template--14922039296102__2a2f085d-f114-4781-ab6f-d4b5b7ecc3a9-variant_picker-1": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "template--14922039296102__2a2f085d-f114-4781-ab6f-d4b5b7ecc3a9-quantity_selector-1": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "6569869f-9c31-413f-92b6-25332aeb4c43": {
+          "type": "text",
+          "settings": {
+            "text": "With supportive cushioning built for a smooth run, the Nike InfinityRN 4 is a brand-new take on a familiar favourite. It's made from our all-new Nike ReactX foam, which gives you 13% more energy return compared to Nike React foam, to help you stay fresh and bouncy. (What's more? Nike ReactX reduces its carbon footprint in a pair of midsoles by at least 43% compared with Nike React foam.*) We coupled the ReactX foam with Nike Running's best-fitting Flyknit yet, so you can take off any time, anywhere with secure upper support and breathability. It's the kind of shoe that can grant you that priceless peace of mind to go faster and further, thanks to an intuitive design that supports every stride.Colour Shown: University Red\/Campfire Orange\/Rugged Orange\/Midnight NavyStyle: DR2665-600",
+            "text_style": "body"
+          }
+        },
+        "template--14922039296102__2a2f085d-f114-4781-ab6f-d4b5b7ecc3a9-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "template--14922039296102__2a2f085d-f114-4781-ab6f-d4b5b7ecc3a9-share-1": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "b2100989-8e41-4783-a47b-ac4e322cc62a": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "vertical",
+            "icon_1": "recycle",
+            "heading_1": "This product is made with at least 20% recycled content by weight",
+            "icon_2": "return",
+            "heading_2": "Nike Members enjoy <a href=\"https:\/\/www.nike.com\/in\/help\/a\/returns-policy-gs\">free returns<\/a>.",
+            "icon_3": "truck",
+            "heading_3": "Standard delivery 4–9 business days"
+          }
+        }
+      },
+      "block_order": [
+        "template--14922039296102__2a2f085d-f114-4781-ab6f-d4b5b7ecc3a9-text-1",
+        "template--14922039296102__2a2f085d-f114-4781-ab6f-d4b5b7ecc3a9-title-1",
+        "template--14922039296102__2a2f085d-f114-4781-ab6f-d4b5b7ecc3a9-price-1",
+        "template--14922039296102__2a2f085d-f114-4781-ab6f-d4b5b7ecc3a9-variant_picker-1",
+        "template--14922039296102__2a2f085d-f114-4781-ab6f-d4b5b7ecc3a9-quantity_selector-1",
+        "6569869f-9c31-413f-92b6-25332aeb4c43",
+        "template--14922039296102__2a2f085d-f114-4781-ab6f-d4b5b7ecc3a9-buy_buttons-1",
+        "template--14922039296102__2a2f085d-f114-4781-ab6f-d4b5b7ecc3a9-share-1",
+        "b2100989-8e41-4783-a47b-ac4e322cc62a"
+      ],
+      "settings": {
+        "product": "nike-infinityrn-4",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "e0f675f5-f433-4b5f-b0e0-2f09335f383e": {
+      "type": "image-with-text",
+      "blocks": {
+        "5c40fc56-4d1f-4e36-8757-db45fe58fd04": {
+          "type": "caption",
+          "settings": {
+            "caption": "Just do it with nike",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "large"
+          }
+        },
+        "template--14922039296102__e0f675f5-f433-4b5f-b0e0-2f09335f383e-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Running is Believing",
+            "heading_size": "h1"
+          }
+        },
+        "template--14922039296102__e0f675f5-f433-4b5f-b0e0-2f09335f383e-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Ekiden is a race like no other.<\/p><p>The Nike EKIDEN PACK once again celebrates the spirit of this event with shoes to support its runners.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--14922039296102__e0f675f5-f433-4b5f-b0e0-2f09335f383e-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHop now",
+            "button_link": "shopify:\/\/products\/nike-infinityrn-4",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "5c40fc56-4d1f-4e36-8757-db45fe58fd04",
+        "template--14922039296102__e0f675f5-f433-4b5f-b0e0-2f09335f383e-heading-1",
+        "template--14922039296102__e0f675f5-f433-4b5f-b0e0-2f09335f383e-text-1",
+        "template--14922039296102__e0f675f5-f433-4b5f-b0e0-2f09335f383e-button-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/image9.jpg",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "ambient",
+        "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "a5fad2f1-422c-4ab6-8da3-63d0f2d5b677": {
+      "type": "collection-list",
+      "blocks": {
+        "template--14922039296102__a5fad2f1-422c-4ab6-8da3-63d0f2d5b677-featured_collection-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "adidas"
+          }
+        },
+        "template--14922039296102__a5fad2f1-422c-4ab6-8da3-63d0f2d5b677-featured_collection-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "converse-1"
+          }
+        },
+        "template--14922039296102__a5fad2f1-422c-4ab6-8da3-63d0f2d5b677-featured_collection-3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "puma"
+          }
+        },
+        "f1ce1f83-4606-4c14-8d23-e68175a3e0bb": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "asics-tiger"
+          }
+        },
+        "27a1cd66-ba03-4387-b715-98d57ad0f4d8": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "herschel"
+          }
+        }
+      },
+      "block_order": [
+        "template--14922039296102__a5fad2f1-422c-4ab6-8da3-63d0f2d5b677-featured_collection-1",
+        "template--14922039296102__a5fad2f1-422c-4ab6-8da3-63d0f2d5b677-featured_collection-2",
+        "template--14922039296102__a5fad2f1-422c-4ab6-8da3-63d0f2d5b677-featured_collection-3",
+        "f1ce1f83-4606-4c14-8d23-e68175a3e0bb",
+        "27a1cd66-ba03-4387-b715-98d57ad0f4d8"
+      ],
+      "settings": {
+        "title": "Other Top Brands",
+        "heading_size": "h1",
+        "image_ratio": "portrait",
+        "columns_desktop": 5,
+        "color_scheme": "",
+        "show_view_all": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "b25df51c-72ca-414b-9e74-e9515d004631": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Mens Special collection",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "men-1",
+        "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
         "enable_desktop_slider": false,
-        "color_scheme": "background-1",
+        "color_scheme": "",
         "image_ratio": "adapt",
         "image_shape": "default",
-        "show_secondary_image": true,
+        "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
         "enable_quick_add": false,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 44,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "fb6961a1-9b38-44e8-93fb-289b165883f7": {
+      "type": "collage",
+      "blocks": {
+        "template--14922039296102__fb6961a1-9b38-44e8-93fb-289b165883f7-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/b34a89dd1559c69852bd8268db4ed9e2_aaa29e0d-9eff-474e-9f96-3147793b44b2.jpg"
+          }
+        },
+        "template--14922039296102__fb6961a1-9b38-44e8-93fb-289b165883f7-product-1": {
+          "type": "product",
+          "settings": {
+            "product": "supra-mens-vaider",
+            "second_image": true
+          }
+        },
+        "template--14922039296102__fb6961a1-9b38-44e8-93fb-289b165883f7-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "supra"
+          }
+        }
+      },
+      "block_order": [
+        "template--14922039296102__fb6961a1-9b38-44e8-93fb-289b165883f7-image-1",
+        "template--14922039296102__fb6961a1-9b38-44e8-93fb-289b165883f7-product-1",
+        "template--14922039296102__fb6961a1-9b38-44e8-93fb-289b165883f7-collection-1"
+      ],
+      "settings": {
+        "heading": "Best Selling product",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "35c2ce09-257c-4082-b0b1-891c12a8ae3d": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14922039296102__35c2ce09-257c-4082-b0b1-891c12a8ae3d-slide-1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/10740784_2932.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "template--14922039296102__35c2ce09-257c-4082-b0b1-891c12a8ae3d-slide-2": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/10261621_4396487.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14922039296102__35c2ce09-257c-4082-b0b1-891c12a8ae3d-slide-1",
+        "template--14922039296102__35c2ce09-257c-4082-b0b1-891c12a8ae3d-slide-2"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "image_behavior": "ambient",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "990aa6aa-a3f8-44fa-b5a6-33f7143b5a47": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Black friday and cyber monday sales",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "converse-1",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
         "padding_bottom": 36
       }
     }
   },
   "order": [
     "image_banner",
-    "featured_collection"
+    "143d3e38-8835-4fa1-8e66-5ed6153c8e5b",
+    "115f5bdc-c0ec-46ca-8ea2-ce7815e0e08b",
+    "2a2f085d-f114-4781-ab6f-d4b5b7ecc3a9",
+    "e0f675f5-f433-4b5f-b0e0-2f09335f383e",
+    "a5fad2f1-422c-4ab6-8da3-63d0f2d5b677",
+    "b25df51c-72ca-414b-9e74-e9515d004631",
+    "fb6961a1-9b38-44e8-93fb-289b165883f7",
+    "35c2ce09-257c-4082-b0b1-891c12a8ae3d",
+    "990aa6aa-a3f8-44fa-b5a6-33f7143b5a47"
   ]
 }

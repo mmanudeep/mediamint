@@ -11,14 +11,24 @@
             "text": "Welcome to our store",
             "link": ""
           }
+        },
+        "83ed1630-cbd9-455c-84ca-24f16742d3bf": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome",
+            "link": ""
+          }
         }
       },
       "block_order": [
-        "announcement-bar-0"
+        "announcement-bar-0",
+        "83ed1630-cbd9-455c-84ca-24f16742d3bf"
       ],
       "settings": {
+        "bg_color": "#353535",
+        "text_Color": "#ffffff",
         "color_scheme": "background-1",
-        "show_line_separator": true,
+        "show_line_separator": false,
         "show_social": false,
         "auto_rotate": false,
         "change_slides_speed": 5,
@@ -29,11 +39,11 @@
     "header": {
       "type": "header",
       "settings": {
-        "logo_position": "middle-left",
+        "logo_position": "middle-center",
         "menu": "main-menu",
-        "menu_type_desktop": "dropdown",
+        "menu_type_desktop": "mega",
         "sticky_header_type": "on-scroll-up",
-        "show_line_separator": true,
+        "show_line_separator": false,
         "color_scheme": "background-1",
         "menu_color_scheme": "background-1",
         "enable_country_selector": true,
