@@ -419,3 +419,35 @@ body::-webkit-scrollbar {
     }
   }
 }
+
+.footer {
+  .footer__content-top {
+    .footer__blocks-wrapper {
+      .footer-block {
+        .footer-block__heading {
+          font-weight: 800;
+          font-size: 16px;
+          text-transform: uppercase;
+          letter-spacing: 0;
+        }
+        .footer-block__details-content {
+          li {
+            a {
+              font-size: 12px;
+              letter-spacing: 0;
+              font-weight: 600;
+              text-transform: uppercase;
+              text-decoration: none;
+              &:hover {
+                color: #000;
+              }
+            }
+          }
+          .list-menu__item--active {
+            color: inherit;
+          }
+        }
+      }
+    }
+  }
+}
