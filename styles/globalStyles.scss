@@ -451,3 +451,26 @@ body::-webkit-scrollbar {
     }
   }
 }
+
+.newsletter {
+  .newsletter__wrapper {
+    h2 {
+      font-size: 25px;
+      letter-spacing: 0px;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin: 0;
+      @media (min-width: 991px) {
+        font-size: 40px;
+      }
+    }
+    .newsletter__subheading {
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        color: #353535;
+        letter-spacing: 0;
+      }
+    }
+  }
+}

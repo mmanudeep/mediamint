@@ -378,3 +378,22 @@ body::-webkit-scrollbar {
 .footer .footer__content-top .footer__blocks-wrapper .footer-block .footer-block__details-content .list-menu__item--active {
   color: inherit;
 }
+
+.newsletter .newsletter__wrapper h2 {
+  font-size: 25px;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0;
+}
+@media (min-width: 991px) {
+  .newsletter .newsletter__wrapper h2 {
+    font-size: 40px;
+  }
+}
+.newsletter .newsletter__wrapper .newsletter__subheading p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #353535;
+  letter-spacing: 0;
+}
