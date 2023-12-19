@@ -474,3 +474,24 @@ body::-webkit-scrollbar {
     }
   }
 }
+
+.about {
+  .main-page-title {
+    font-size: 25px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 3rem;
+    @media (min-width: 991px) {
+      font-size: 40px;
+    }
+  }
+  .rte {
+    h3 {
+      text-transform: uppercase;
+      letter-spacing: 0;
+      font-weight: 600;
+    }
+  }
+}
