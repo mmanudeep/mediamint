@@ -264,6 +264,9 @@ body::-webkit-scrollbar {
   font-weight: 400;
   letter-spacing: 0;
 }
+#CartDrawer .cart-drawer__collection .card__media .media img {
+  object-fit: contain;
+}
 
 .image-with-text .image-with-text__text-item .image-with-text__content .image-with-text__heading {
   font-size: 25px;

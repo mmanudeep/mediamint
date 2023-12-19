@@ -292,6 +292,15 @@ body::-webkit-scrollbar {
     font-weight: 400;
     letter-spacing: 0;
   }
+  .cart-drawer__collection {
+    .card__media {
+      .media {
+        img {
+          object-fit: contain;
+        }
+      }
+    }
+  }
 }
 
 .image-with-text {
