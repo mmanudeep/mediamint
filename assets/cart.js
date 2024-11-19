@@ -169,24 +169,36 @@ class CartItems extends HTMLElement {
 
         publish(PUB_SUB_EVENTS.cartUpdate, { source: 'cart-items', cartData: parsedState, variantId: variantId });
 
-           if (quantity > 0) { // Ensure it's an addition
-        const addedProduct = parsedState.items[line - 1]; // Get the last updated product
-        window.dataLayer = window.dataLayer || [];
-        dataLayer.push({
-            event: 'addToCart',
-            ecommerce: {
-                currencyCode: 'USD',
-                add: {
-                    products: [{
-                        name: addedProduct.title,
-                        id: addedProduct.id,
-                        price: addedProduct.price,
-                        quantity: quantity
-                    }]
-                }
-            }
-        });
-    }
+if (quantity > 0) { // Ensure it's an addition
+    const addedProduct = parsedState.items[line - 1]; // Get the last updated product
+    window.dataLayer = window.dataLayer || [];
+    dataLayer.push({
+        event: 'addToCart',
+        event_name: 'add_to_cart',
+        action_source: 'web',
+        event_time: Math.floor(Date.now() / 1000), // Unix timestamp
+        event_id: 'add_to_cart_' + Math.random().toString(36).substring(2, 15), // Unique event ID
+        event_source_url: window.location.href,
+        opt_out: false,
+        partner_name: 'ss-shopify',
+        user_data: {
+            client_ip_address: 'IP_ADDRESS', // Replace with dynamic IP if available
+            client_user_agent: navigator.userAgent
+        },
+        custom_data: {
+            currency: 'USD',
+            value: addedProduct.price * quantity, // Total value
+            contents: [{
+                id: addedProduct.id,
+                name: addedProduct.title,
+                price: addedProduct.price,
+                quantity: quantity
+            }]
+        }
+    });
+}
+
+
       })
       .catch(() => {
         this.querySelectorAll('.loading__spinner').forEach((overlay) => overlay.classList.add('hidden'));
@@ -196,24 +208,35 @@ class CartItems extends HTMLElement {
       .finally(() => {
         this.disableLoading(line);
       });
-    if (quantity > 0) { // Ensure it's an addition and not a removal
+if (quantity > 0) { // Ensure it's an addition
     const addedProduct = parsedState.items[line - 1]; // Get the last updated product
     window.dataLayer = window.dataLayer || [];
     dataLayer.push({
         event: 'addToCart',
-        ecommerce: {
-            currencyCode: 'USD', // Replace with your store's currency
-            add: {
-                products: [{
-                    name: addedProduct.title, // Product name
-                    id: addedProduct.id, // Product ID
-                    price: addedProduct.price, // Product price
-                    quantity: quantity // Product quantity
-                }]
-            }
+        event_name: 'add_to_cart',
+        action_source: 'web',
+        event_time: Math.floor(Date.now() / 1000), // Unix timestamp
+        event_id: 'add_to_cart_' + Math.random().toString(36).substring(2, 15), // Unique event ID
+        event_source_url: window.location.href,
+        opt_out: false,
+        partner_name: 'ss-shopify',
+        user_data: {
+            client_ip_address: 'IP_ADDRESS', // Replace with dynamic IP if available
+            client_user_agent: navigator.userAgent
+        },
+        custom_data: {
+            currency: 'USD',
+            value: addedProduct.price * quantity, // Total value
+            contents: [{
+                id: addedProduct.id,
+                name: addedProduct.title,
+                price: addedProduct.price,
+                quantity: quantity
+            }]
         }
     });
 }
+
 
   }
 
