@@ -168,6 +168,25 @@ class CartItems extends HTMLElement {
         }
 
         publish(PUB_SUB_EVENTS.cartUpdate, { source: 'cart-items', cartData: parsedState, variantId: variantId });
+
+           if (quantity > 0) { // Ensure it's an addition
+        const addedProduct = parsedState.items[line - 1]; // Get the last updated product
+        window.dataLayer = window.dataLayer || [];
+        dataLayer.push({
+            event: 'addToCart',
+            ecommerce: {
+                currencyCode: 'USD',
+                add: {
+                    products: [{
+                        name: addedProduct.title,
+                        id: addedProduct.id,
+                        price: addedProduct.price,
+                        quantity: quantity
+                    }]
+                }
+            }
+        });
+    }
       })
       .catch(() => {
         this.querySelectorAll('.loading__spinner').forEach((overlay) => overlay.classList.add('hidden'));
@@ -177,6 +196,25 @@ class CartItems extends HTMLElement {
       .finally(() => {
         this.disableLoading(line);
       });
+    if (quantity > 0) { // Ensure it's an addition and not a removal
+    const addedProduct = parsedState.items[line - 1]; // Get the last updated product
+    window.dataLayer = window.dataLayer || [];
+    dataLayer.push({
+        event: 'addToCart',
+        ecommerce: {
+            currencyCode: 'USD', // Replace with your store's currency
+            add: {
+                products: [{
+                    name: addedProduct.title, // Product name
+                    id: addedProduct.id, // Product ID
+                    price: addedProduct.price, // Product price
+                    quantity: quantity // Product quantity
+                }]
+            }
+        }
+    });
+}
+
   }
 
   updateLiveRegions(line, message) {
