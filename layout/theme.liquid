@@ -1,27 +1,7 @@
 <!doctype html>
 <html class="no-js" lang="{{ request.locale.iso_code }}">
   <head>
-    <script>
-window.dataLayer = window.dataLayer || [];
-dataLayer.push({
-    event: "pageVisit",
-    event_name: "page_visit",
-    action_source: "web",
-    event_time: Math.floor(Date.now() / 1000),
-    event_id: "page_visit_" + Math.random().toString(36).substring(2, 15),
-    event_source_url: window.location.href,
-    opt_out: false, // Update based on user consent
-    partner_name: "ss-shopify",
-    user_data: {
-        client_ip_address: "{{ request.ip }}", // Shopify liquid placeholder for IP
-        client_user_agent: navigator.userAgent
-    },
-    custom_data: {
-        page_title: document.title
-    }
-});
-</script>
-
+   
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -365,6 +345,27 @@ body {
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-PL72HMVS');</script>
     <!-- End Google Tag Manager -->
+     <script>
+window.dataLayer = window.dataLayer || [];
+dataLayer.push({
+    event: "pageVisit",
+    event_name: "page_visit",
+    action_source: "web",
+    event_time: Math.floor(Date.now() / 1000),
+    event_id: "page_visit_" + Math.random().toString(36).substring(2, 15),
+    event_source_url: window.location.href,
+    opt_out: false, // Update based on user consent
+    partner_name: "ss-shopify",
+    user_data: {
+        client_ip_address: "{{ request.ip }}", // Shopify liquid placeholder for IP
+        client_user_agent: navigator.userAgent
+    },
+    custom_data: {
+        page_title: document.title
+    }
+});
+</script>
+
   </head>
 
   <body class="gradient {{ page_title | handle }} template-{{ request.page_type | handle }} {{ page.title }} {{ collection.handle }} {{ product.title }} {% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
