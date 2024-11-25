@@ -224,13 +224,13 @@ if (quantity > 0) { // Ensure it's an addition
         },
         custom_data: {
             currency: 'USD',
-            value: addedProduct.price * quantity, // Total value
-            contents: [{
-                id: addedProduct.id,
-                name: addedProduct.title,
-                price: addedProduct.price,
-                quantity: quantity
-            }]
+            // value: addedProduct.price * quantity, // Total value
+            // contents: [{
+            //     id: addedProduct.id,
+            //     name: addedProduct.title,
+            //     price: addedProduct.price,
+            //     quantity: quantity
+            // }]
         }
     });
 }
