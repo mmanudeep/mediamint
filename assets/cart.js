@@ -182,7 +182,6 @@ if (quantity > 0) { // Ensure it's an addition
         opt_out: false,
         partner_name: 'ss-shopify',
         user_data: {
-            client_ip_address: 'IP_ADDRESS', // Replace with dynamic IP if available
             client_user_agent: navigator.userAgent
         },
         custom_data: {
@@ -221,7 +220,6 @@ if (quantity > 0) { // Ensure it's an addition
         opt_out: false,
         partner_name: 'ss-shopify',
         user_data: {
-            client_ip_address: 'IP_ADDRESS', // Replace with dynamic IP if available
             client_user_agent: navigator.userAgent
         },
         custom_data: {
